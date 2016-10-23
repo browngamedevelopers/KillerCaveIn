@@ -99,6 +99,7 @@ x += hsp;
             <string>/// Interacting
 
 kInt = keyboard_check(ord('E'));
+kUp = keyboard_check(ord('W'));
 
 if (kInt) {
     inst = instance_place(x, y, objObject);
@@ -106,6 +107,11 @@ if (kInt) {
         with (inst) activated = true;
     }
 }
+
+if (kUp and place_meeting(x,y,objDoor)) {
+    show_message('Doors do not function yet!');
+}
+
 
 </string>
           </argument>

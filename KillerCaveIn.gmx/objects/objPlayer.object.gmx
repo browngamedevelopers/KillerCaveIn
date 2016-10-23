@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grav = 1.0; 
+            <string>/// Initialization
+
+grav = 1.0; 
 hsp = 0; 
 vsp = 0; 
 jumpSpeed = 16; 
@@ -53,10 +55,11 @@ maxfallspeed = 20;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Get input 
+            <string>/// Controls
+
+// Get input 
 kLeft = -(keyboard_check(vk_left) || keyboard_check(ord('A'))); 
 kRight = keyboard_check(vk_right) || keyboard_check(ord('D')); 
-kJump = keyboard_check_pressed(vk_up) || keyboard_check(ord('W'));
 
 // Use input 
 move = kLeft + kRight; 
@@ -64,10 +67,6 @@ hsp = move * moveSpeed;
 if (vsp &lt; maxfallspeed) { 
     vsp += grav;
 };
-
-if (place_meeting(x, y + 1, objFloor)) { 
-    vsp = kJump * -jumpSpeed 
-}
 
 // H Collisions 
 if (place_meeting(x + hsp, y, objFloor)) { 
@@ -77,15 +76,6 @@ if (place_meeting(x + hsp, y, objFloor)) {
     hsp = 0; 
 } 
 x += hsp;
-
-// v Collisions 
-if (place_meeting(x, y + vsp, objFloor)) { 
-    while (!place_meeting(x, y + sign(vsp), objFloor)) {
-        y += sign(vsp); 
-    } 
-    vsp = 0; 
-} 
-     y += vsp;
 </string>
           </argument>
         </arguments>

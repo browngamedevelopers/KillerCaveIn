@@ -28,7 +28,10 @@
             <string>/// Check for activation
 
 if (activated == true) {
-    show_message("This is a key.");
+    if !instance_exists(objDiologue_door)
+    {
+    instance_create(0, 0, objDiologue_key)
+    };
     activated = false
 }
 </string>

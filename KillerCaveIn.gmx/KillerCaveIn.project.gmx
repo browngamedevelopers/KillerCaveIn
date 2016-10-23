@@ -10,6 +10,8 @@
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprBox</sprite>
     <sprite>sprites\sprDtest</sprite>
+    <sprite>sprites\sprObject</sprite>
+    <sprite>sprites\sprite4</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -18,6 +20,9 @@
     <object>objects\objFloor</object>
     <object>objects\objPlayer</object>
     <object>objects\objDtest</object>
+    <object>objects\objObject</object>
+    <object>objects\objKey</object>
+    <object>objects\objDoor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

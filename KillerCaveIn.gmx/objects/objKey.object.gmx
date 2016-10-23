@@ -28,7 +28,11 @@
             <string>/// Check for activation
 
 if (activated == true) {
-    show_message("This is a key.");
+    if !instance_exists(objDtest) {
+        aa = instance_create(10, 10, objDtest);
+        aa.message[0] = "This is a key.";
+        aa.message_end = 0;
+    }
     activated = false
 }
 </string>

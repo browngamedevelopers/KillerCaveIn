@@ -9,7 +9,6 @@
     <sprite>sprites\sprFloor</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprBox</sprite>
-    <sprite>sprites\sprDtest</sprite>
     <sprite>sprites\sprObject</sprite>
     <sprite>sprites\sprite4</sprite>
   </sprites>
@@ -19,7 +18,8 @@
     <object>objects\objEnemy</object>
     <object>objects\objFloor</object>
     <object>objects\objPlayer</object>
-    <object>objects\objDtest</object>
+    <object>objects\objDiologue_door</object>
+    <object>objects\objDiologue_key</object>
     <object>objects\objObject</object>
     <object>objects\objKey</object>
     <object>objects\objDoor</object>

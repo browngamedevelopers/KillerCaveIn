@@ -33,6 +33,7 @@ vsp = 0;
 jumpSpeed = 16; 
 moveSpeed = 13;
 maxfallspeed = 20;
+depth = -20;
 </string>
           </argument>
         </arguments>

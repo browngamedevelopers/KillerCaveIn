@@ -23,6 +23,7 @@
     <object>objects\objObject</object>
     <object>objects\objKey</object>
     <object>objects\objDoor</object>
+    <object>objects\objEntranceElevator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

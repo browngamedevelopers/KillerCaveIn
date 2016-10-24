@@ -26,13 +26,26 @@
           <argument>
             <kind>1</kind>
             <string>//write your messages in an array, starting at 0, like so
-message[0] = "I'm the elivator diologue.";
-message[1] = "I will explain all of the backstory you need to know!";
-message[2] = "But not now.";
-message[3] = "Get out of here!";
+message[0] = "Robin, come in. Can you hear me?";
+message[1] = "'Yeah, I got you.'";
+message[2] = "We lost contact with the research team about 18 hours ago."; 
+message[3] = "Someone must’ve flipped the emergency shutdown switch, so everything’s in lockdown.";
+message[4] = "We just need you to go down there, unlock the doors, and bring everyone back up.";
+message[5] = "'Yeah, yeah, I know.'";
+message[6] = "'Simple search and rescue…'";
+message[7] = "'What the hell were these guys working on all the way down here?'";
+message[8] = "That’s classified. Don’t poke around. Just get in and get out.";
+message[9] = "The researchers know the emergency protocol.";
+message[10] = "They should be waiting somewhere on the upper level.";
+message[11] = "Just remember to---";
+message[12] = "'Hello?'";
+message[13] = "...";
+message[14] = "Ugh. Piece of shit radio… must not reach this far underground.";
+message[15] = "Guess I’m on my own.";
+message[16] = "";
 
 message_current = 0; //0 is the first number in our array, and the message we are currently at
-message_end = 3; //the last number in our array
+message_end = 15; //the last number in our array
 message_draw = ""; //this is what we 'write' out. It's blank right now
 increase = 0.5; //the speed at which new characters are added
 characters = 0; //how many characters have already been drawn
@@ -76,7 +89,7 @@ else { //if current character is more than the amount in the current message
         }
         else { //if our messages are done (we reach 6, in our case)...
             instance_destroy(); //destroy the object
-            room_goto(room1);
+            room_goto(hallway1);
         }
     }
 }

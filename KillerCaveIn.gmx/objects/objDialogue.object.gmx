@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//write your messages in an array, starting at 0, like so
-message[0] = "----------------------------------------------";
+message[0] = "-------------------------------------------";
 
 message_current = 0; //0 is the first number in our array, and the message we are currently at
 message_end = 0; //the last number in our array
@@ -36,6 +36,8 @@ characters = 0; //how many characters have already been drawn
 hold = 0; //if we hold 'Z', the text will render faster
 
 message_length = string_length(message[message_current]); //get the number of characters in the first message
+
+depth = -900000
 </string>
           </argument>
         </arguments>
@@ -98,8 +100,12 @@ else { //if current character is more than the amount in the current message
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xpos = view_xview + 100;
-draw_text(xpos, 670, message_draw)
+            <string>/// Draw the text
+
+xpos = view_xview + 100;
+// xpos = view_xview + 512 - message_length * 4;
+draw_set_color(c_white);
+draw_text(xpos, room_height - 100, message_draw)
 </string>
           </argument>
         </arguments>

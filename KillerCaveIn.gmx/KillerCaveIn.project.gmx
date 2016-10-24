@@ -28,6 +28,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
+    <room>rooms\locked_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -24,9 +24,12 @@
     <object>objects\objKey</object>
     <object>objects\objDoor</object>
     <object>objects\objEntranceElevator</object>
+    <object>objects\objLockedDoor</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\hallway1</room>
+    <room>rooms\hallway2</room>
+    <room>rooms\office</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

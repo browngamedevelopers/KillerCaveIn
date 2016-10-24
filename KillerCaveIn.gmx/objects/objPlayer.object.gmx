@@ -116,6 +116,13 @@ if (kUp and place_meeting(x,y,objDoor)) {
     };
 }
 
+if (room == hallway1) and (x &gt;= room_width) {
+    room_goto(hallway2)
+} 
+else if (room == hallway2) and (x &lt;= 0) {
+    room_goto(hallway1);
+}
+
 
 </string>
           </argument>

@@ -31,7 +31,6 @@
     <room>rooms\hallway1</room>
     <room>rooms\hallway2</room>
     <room>rooms\office</room>
-    <room>rooms\room1</room>
     <room>rooms\locked_room</room>
   </rooms>
   <help>

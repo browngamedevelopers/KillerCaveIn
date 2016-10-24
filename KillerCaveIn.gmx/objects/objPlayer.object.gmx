@@ -31,7 +31,7 @@ grav = 1.0;
 hsp = 0; 
 vsp = 0; 
 jumpSpeed = 16; 
-moveSpeed = 13;
+moveSpeed = 8;
 maxfallspeed = 20;
 depth = -20;
 </string>
@@ -59,11 +59,11 @@ depth = -20;
             <string>/// Movement
 
 // Get input 
-kLeft = -(keyboard_check(vk_left) || keyboard_check(ord('A'))); 
+kLeft = (keyboard_check(vk_left) || keyboard_check(ord('A'))); 
 kRight = keyboard_check(vk_right) || keyboard_check(ord('D')); 
 
 // Use input 
-move = kLeft + kRight; 
+move = -kLeft + kRight; 
 hsp = move * moveSpeed; 
 if (vsp &lt; maxfallspeed) { 
     vsp += grav;
@@ -77,6 +77,17 @@ if (place_meeting(x + hsp, y, objFloor)) {
     hsp = 0; 
 } 
 x += hsp;
+
+// Animation
+if kRight {
+    image_xscale = 1
+    image_speed = 0.166
+} else if kLeft {
+    image_xscale = -1
+    image_speed = 0.166
+} else {
+    image_speed = 0
+}
 </string>
           </argument>
         </arguments>
@@ -118,7 +129,7 @@ if (kUp and place_meeting(x,y,objDoor)) {
 }
 
 if (room == hallway1) and (x &gt;= room_width) {
-    room_goto(hallway2)
+    room_goto(hallway2);
 } 
 else if (room == hallway2) and (x &lt;= 0) {
     room_goto(hallway1);

@@ -20,6 +20,7 @@
     <object>objects\objPlayer</object>
     <object>objects\objDiologue_door</object>
     <object>objects\objDiologue_key</object>
+    <object>objects\objDialogue</object>
     <object>objects\objObject</object>
     <object>objects\objKey</object>
     <object>objects\objDoor</object>
@@ -30,6 +31,8 @@
     <room>rooms\hallway1</room>
     <room>rooms\hallway2</room>
     <room>rooms\office</room>
+    <room>rooms\room1</room>
+    <room>rooms\locked_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -28,8 +28,8 @@
             <string>/// Check for activation
 
 if (activated == true) {
-    if !instance_exists(objDtest) {
-        aa = instance_create(10, 10, objDtest);
+    if !instance_exists(objDialogue) {
+        aa = instance_create(10, 10, objDialogue);
         aa.message[0] = "This is a key.";
         aa.message_end = 0;
     }

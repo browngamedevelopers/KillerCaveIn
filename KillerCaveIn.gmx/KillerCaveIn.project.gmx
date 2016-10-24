@@ -18,8 +18,7 @@
     <object>objects\objEnemy</object>
     <object>objects\objFloor</object>
     <object>objects\objPlayer</object>
-    <object>objects\objDiologue_door</object>
-    <object>objects\objDiologue_key</object>
+    <object>objects\objDiologue_elivator</object>
     <object>objects\objDialogue</object>
     <object>objects\objObject</object>
     <object>objects\objKey</object>
@@ -28,6 +27,7 @@
     <object>objects\objLockedDoor</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\elevator</room>
     <room>rooms\hallway1</room>
     <room>rooms\hallway2</room>
     <room>rooms\office</room>

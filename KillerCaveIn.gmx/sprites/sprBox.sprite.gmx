@@ -7,8 +7,8 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>2</bboxmode>
-  <bbox_left>40</bbox_left>
-  <bbox_right>150</bbox_right>
+  <bbox_left>60</bbox_left>
+  <bbox_right>125</bbox_right>
   <bbox_top>3</bbox_top>
   <bbox_bottom>188</bbox_bottom>
   <HTile>0</HTile>

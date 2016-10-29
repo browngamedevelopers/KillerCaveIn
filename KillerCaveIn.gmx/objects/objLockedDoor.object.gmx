@@ -30,9 +30,8 @@
 if (activated == true) {
     activated = false;
     if !instance_exists(objDialogue) {
-        door_dialogue = instance_create(0, 0, objDialogue);
-        door_dialogue.message[0] = "This door is locked.";
-        door_dialogue.message_end = 0;
+        text[0] = "The door is locked.";
+        create_dialogue(text);
     }
 }
 </string>

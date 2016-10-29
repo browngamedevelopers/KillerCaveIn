@@ -1,3 +1,9 @@
+// create_dialogue(array)
+// Input:
+// - An array of text, that represents the text to go through
+// Output:
+// - A objDialogue object that should effectively print the text.
+
 text = instance_create(10, 10, objDialogue);
 array_dialogue = argument[0];
 for (var i = 0; i < array_length_1d(array_dialogue); i++) {

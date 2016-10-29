@@ -39,6 +39,7 @@
     </objects>
     <objects name="Prologue">
       <object>objects\objDialogueElevator</object>
+      <object>objects\objPrologueFlags</object>
     </objects>
     <objects name="B1">
       <object>objects\objEntranceElevator</object>

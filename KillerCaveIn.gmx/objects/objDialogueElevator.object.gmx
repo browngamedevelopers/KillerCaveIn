@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//write your messages in an array, starting at 0, like so
-message[0] = "Robin, come in. Can you hear me?";
+message[0] = "Robin, come in. Can you hear me? (Press E to continue...)";
 message[1] = "'Yeah, I got you.'";
 message[2] = "We lost contact with the research team about 18 hours ago."; 
 message[3] = "Someone must’ve flipped the emergency shutdown switch, so everything’s in lockdown.";
@@ -91,6 +91,10 @@ else { //if current character is more than the amount in the current message
         }
         else { //if our messages are done (we reach 6, in our case)...
             instance_destroy(); //destroy the object
+            with (objPlayer) {
+                x = 160;
+                y = 416;
+            }
             room_goto(hallway1);
         }
     }

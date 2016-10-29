@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -120,22 +120,12 @@ if (kInt) {
     }
 }
 
-if (kUp and place_meeting(x,y,objDoor)) {
-    if !instance_exists(objDialogue) {
-        door_dialogue = instance_create(0, 0, objDialogue);
-        door_dialogue.message[0] = "Doors don't work yet!";
-        door_dialogue.message_end = 0;
+if (kUp) {
+    inst = instance_place(x,y,objDoor);
+    if inst != noone {
+        with (inst) activated = true;
     }
 }
-
-if (room == hallway1) and (x &gt;= room_width) {
-    room_goto(hallway2);
-} 
-else if (room == hallway2) and (x &lt;= 0) {
-    room_goto(hallway1);
-}
-
-
 </string>
           </argument>
         </arguments>

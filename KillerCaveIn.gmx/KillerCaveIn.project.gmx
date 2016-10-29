@@ -10,25 +10,37 @@
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprBox</sprite>
     <sprite>sprites\sprObject</sprite>
-    <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\sprDoor</sprite>
+    <sprite>sprites\sprElevator</sprite>
+    <sprite>sprites\sprWarp</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shader0.shader</shader>
+  </shaders>
   <objects name="objects">
-    <object>objects\objEnemy</object>
-    <object>objects\objFloor</object>
-    <object>objects\objPlayer</object>
-    <object>objects\objDiologue_elivator</object>
-    <object>objects\objDialogue</object>
-    <object>objects\objObject</object>
-    <object>objects\objKey</object>
-    <object>objects\objDoor</object>
-    <object>objects\objEntranceElevator</object>
-    <object>objects\objLockedDoor</object>
+    <objects name="Generics">
+      <object>objects\objDialogue</object>
+      <object>objects\objObject</object>
+      <object>objects\objPlayer</object>
+      <object>objects\objFloor</object>
+      <object>objects\objEnemy</object>
+      <object>objects\objDoor</object>
+      <object>objects\objWarp</object>
+    </objects>
+    <objects name="Prologue">
+      <object>objects\objDialogueElevator</object>
+    </objects>
+    <objects name="B1">
+      <object>objects\objEntranceElevator</object>
+      <object>objects\objLockedDoor</object>
+      <object>objects\objKey</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\elevator</room>
     <room>rooms\hallway1</room>
+    <room>rooms\elevator</room>
     <room>rooms\hallway2</room>
     <room>rooms\office</room>
     <room>rooms\locked_room</room>

@@ -2,7 +2,7 @@
 <sprite>
   <type>0</type>
   <xorig>0</xorig>
-  <yorigin>0</yorigin>
+  <yorigin>180</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
@@ -20,6 +20,6 @@
   <width>80</width>
   <height>180</height>
   <frames>
-    <frame index="0">images\sprite4_0.png</frame>
+    <frame index="0">images\sprDoor_0.png</frame>
   </frames>
 </sprite>

@@ -31,7 +31,7 @@ grav = 1.0;
 hsp = 0; 
 vsp = 0; 
 jumpSpeed = 16; 
-moveSpeed = 8;
+moveSpeed = 5;
 maxfallspeed = 20;
 depth = -20;
 </string>

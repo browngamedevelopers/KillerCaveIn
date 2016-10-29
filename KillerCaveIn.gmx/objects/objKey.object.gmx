@@ -31,14 +31,12 @@ if (activated == true) {
     if !instance_exists(objDialogue) {
         with (objDarkLighting) {
             if lighting == 0.9 {
-                aa = instance_create(10, 10, objDialogue);
-                aa.message[0] = "Lights are turned on.";
-                aa.message_end = 0;
+                text[0] = "Lights are turned on.";
+                create_dialogue(text);
                 lighting = 1.2;
             } else {
-                aa = instance_create(10, 10, objDialogue);
-                aa.message[0] = "Lights are turned off.";
-                aa.message_end = 0;
+                text[0] = "Lights are turned off.";
+                create_dialogue(text);
                 lighting = 0.9;
             }      
         }

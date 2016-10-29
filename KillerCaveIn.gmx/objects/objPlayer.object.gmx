@@ -59,8 +59,9 @@ depth = -20;
             <string>/// Movement
 
 // Get input 
-kLeft = (keyboard_check(vk_left) || keyboard_check(ord('A'))); 
-kRight = keyboard_check(vk_right) || keyboard_check(ord('D')); 
+player_state = (global.game_state == 0);
+kLeft = ((keyboard_check(vk_left) || keyboard_check(ord('A'))) &amp;&amp; player_state); 
+kRight = ((keyboard_check(vk_right) || keyboard_check(ord('D'))) &amp;&amp; player_state); 
 
 // Use input 
 move = -kLeft + kRight; 
@@ -110,8 +111,9 @@ if kRight {
             <kind>1</kind>
             <string>/// Interacting
 
-kInt = keyboard_check(ord('E'));
-kUp = keyboard_check(ord('W'));
+player_state = (global.game_state == 0);
+kInt = (keyboard_check(ord('E')) &amp;&amp; player_state);
+kUp = (keyboard_check(ord('W')) &amp;&amp; player_state);
 
 if (kInt) {
     inst = instance_place(x, y, objObject);

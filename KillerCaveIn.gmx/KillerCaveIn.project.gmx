@@ -3,9 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions>
-    <extension index="0">extensions\Vignette and Noise shader</extension>
-  </NewExtensions>
+  <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprFloor</sprite>
@@ -20,11 +18,13 @@
     <background>background\bgHall1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\create_dialogue.gml</script>
+  </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
     <shader type="GLSLES">shaders\shd_vignette_noise.shader</shader>
   </shaders>
-  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="Generics">
       <object>objects\objDialogue</object>
@@ -34,6 +34,8 @@
       <object>objects\objEnemy</object>
       <object>objects\objDoor</object>
       <object>objects\objWarp</object>
+      <object>objects\objInventory</object>
+      <object>objects\objController</object>
     </objects>
     <objects name="Prologue">
       <object>objects\objDialogueElevator</object>
@@ -46,8 +48,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\hallway1</room>
     <room>rooms\elevator</room>
+    <room>rooms\hallway1</room>
     <room>rooms\hallway2</room>
     <room>rooms\office</room>
     <room>rooms\locked_room</room>

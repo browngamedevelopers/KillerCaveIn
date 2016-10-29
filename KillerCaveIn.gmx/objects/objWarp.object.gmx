@@ -40,6 +40,9 @@
 objPlayer.x = target_x;
 objPlayer.y = target_y;
 objPlayer.depth = -900000;
+with (objDialogue) {
+    instance_destroy();
+}
 room_goto(target_room);
 </string>
           </argument>

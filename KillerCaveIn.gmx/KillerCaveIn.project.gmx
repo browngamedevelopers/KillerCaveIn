@@ -14,7 +14,9 @@
     <sprite>sprites\sprElevator</sprite>
     <sprite>sprites\sprWarp</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>

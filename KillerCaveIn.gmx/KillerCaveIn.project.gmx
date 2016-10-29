@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Vignette and Noise shader</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprFloor</sprite>
@@ -15,12 +17,14 @@
     <sprite>sprites\sprWarp</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
+    <background>background\bgHall1</background>
   </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
+    <shader type="GLSLES">shaders\shd_vignette_noise.shader</shader>
   </shaders>
+  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="Generics">
       <object>objects\objDialogue</object>
@@ -38,6 +42,7 @@
       <object>objects\objEntranceElevator</object>
       <object>objects\objLockedDoor</object>
       <object>objects\objKey</object>
+      <object>objects\objDarkLighting</object>
     </objects>
   </objects>
   <rooms name="rooms">

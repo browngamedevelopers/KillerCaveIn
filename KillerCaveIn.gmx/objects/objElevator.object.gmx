@@ -29,10 +29,16 @@
 
 if (activated == true) {
     activated = false;
-    if !instance_exists(objDialogue) {
-        text[0] = "Huh. Needs power.";
-        create_dialogue(text);
-    }
+    with (objB1Flags) {
+        if (!power_on) {
+            if !instance_exists(objDialogue) {
+                text[0] = "Huh. Needs power.";
+                create_dialogue(text);
+            }
+        } else {
+            room_goto(temp_room);
+        }
+    } 
 }
 </string>
           </argument>

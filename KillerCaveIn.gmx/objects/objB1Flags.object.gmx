@@ -28,6 +28,7 @@
             <string>/// Initialization of flags for B1
 
 first_time = true;
+narrative_pause = false;
 power_on = false;
 
 </string>
@@ -54,15 +55,20 @@ power_on = false;
             <kind>1</kind>
             <string>if first_time {
     first_time = false;
-    global.game_state = 2;
+    narrative_pause = true;
     text[0] = "Of course there's no power. I can't see shit.";
     text[1] = "Hello?";
     text[2] = "...";
     text[3] = "Where is everyone?";
-    first_time_dialogue = create_dialogue(text);
+    first_time_dialogue = instance_find(create_dialogue(text), 1);
 }
 
-if !instance_exists(first_time_dialogue) {
+if (narrative_pause == true) {
+    global.game_state = 2;
+}
+
+if (!instance_exists(objDialogue) &amp;&amp; narrative_pause == true) {
+    narrative_pause = false;
     global.game_state = 0;
 }
 </string>

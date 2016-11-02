@@ -64,6 +64,7 @@
     <room>rooms\hallway2</room>
     <room>rooms\office</room>
     <room>rooms\locked_room</room>
+    <room>rooms\temp_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

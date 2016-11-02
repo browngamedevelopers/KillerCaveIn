@@ -31,10 +31,29 @@
 // 1 = Inventory control
 // 2 = Narrative control (player can't move by themselves)
 global.game_state = 0;
-
-// Check if dialogue exists
-// (Dialogues can only be created if one doesn't already exist)
-global.dialogue_exists = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>show_debug_message(global.game_state);
 </string>
           </argument>
         </arguments>
@@ -60,6 +79,7 @@ global.dialogue_exists = 0;
             <string>/// Check inventory key
 
 dialogue_exists = instance_exists(objDialogue);
+
 
 if (global.game_state == 0 &amp;&amp; !dialogue_exists) {
     global.game_state = 1;

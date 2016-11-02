@@ -31,7 +31,7 @@ grav = 1.0;
 hsp = 0; 
 vsp = 0; 
 jumpSpeed = 16; 
-moveSpeed = 5;
+moveSpeed = 6.5;
 maxfallspeed = 20;
 depth = -20;
 </string>
@@ -93,41 +93,6 @@ if kRight {
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Interacting
-
-player_state = (global.game_state == 0);
-kInt = (keyboard_check(ord('E')) &amp;&amp; player_state);
-kUp = (keyboard_check(ord('W')) &amp;&amp; player_state);
-
-if (kInt) {
-    inst_object = instance_place(x, y, objObject);
-    inst_door = instance_place(x,y,objDoor);
-    if inst_object != noone {
-        with (inst_object) activated = true;
-    } else if inst_door != noone {
-        with (inst_door) activated = true;
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="4" ename="objEnemy">
       <action>
@@ -155,6 +120,42 @@ if (kInt) {
     room_restart();
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Interacting
+
+player_state = (global.game_state == 0);
+kInt = (keyboard_check_pressed(ord('E')) &amp;&amp; player_state);
+
+if (kInt &amp;&amp; player_state) {
+    inst_object = instance_place(x, y, objObject);
+    inst_door = instance_place(x,y,objDoor);
+    if inst_object != noone {
+        with (inst_object) activated = true;
+    } else if inst_door != noone {
+        with (inst_door) activated = true;
+    }
+}
 </string>
           </argument>
         </arguments>

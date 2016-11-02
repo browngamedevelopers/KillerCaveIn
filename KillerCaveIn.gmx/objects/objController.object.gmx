@@ -29,7 +29,12 @@
 
 // 0 = Player control
 // 1 = Inventory control
+// 2 = Narrative control (player can't move by themselves)
 global.game_state = 0;
+
+// Check if dialogue exists
+// (Dialogues can only be created if one doesn't already exist)
+global.dialogue_exists = 0;
 </string>
           </argument>
         </arguments>

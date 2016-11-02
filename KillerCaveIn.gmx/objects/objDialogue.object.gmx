@@ -43,6 +43,34 @@ depth = -900000
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Delay before instance is destroyed
+
+// This delay is done so there is a "break" between dialogues
+// (i.e. a dialogue doesn't show up immediately after a different one ends)
+
+instance_destroy(); //destroy the object
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -60,7 +88,7 @@ depth = -900000
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_state = (global.game_state == 0);
+            <string>player_state = (global.game_state == 0) or (global.game_state == 2);
 key_pressed = (keyboard_check_pressed(ord("E")));
 
 if (characters &lt; message_length) { //if current character count is less than the amount in current message* 
@@ -77,7 +105,7 @@ else { //if current character is more than the amount in the current message
             message_draw = ""; //clear the drawn text
         }
         else { //if our messages are done (we reach 6, in our case)...
-            instance_destroy(); //destroy the object
+            alarm[0] = 1;
         }
     }
 }

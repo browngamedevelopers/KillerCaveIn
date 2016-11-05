@@ -17,7 +17,7 @@
       <sprite>sprites\sprFloorB1</sprite>
       <sprite>sprites\sprStartElevator</sprite>
       <sprite>sprites\sprLockedDoor</sprite>
-      <sprite>sprites\sprite11</sprite>
+      <sprite>sprites\sprPower</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -27,6 +27,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\create_dialogue.gml</script>
+    <script>scripts\warp_player.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -65,6 +66,7 @@
     <room>rooms\office</room>
     <room>rooms\locked_room</room>
     <room>rooms\temp_room</room>
+    <room>rooms\error_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

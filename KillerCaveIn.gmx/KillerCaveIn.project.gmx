@@ -25,7 +25,9 @@
     <background>background\bathroom</background>
     <background>background\L2LivingRoom</background>
     <background>background\background8</background>
+    <background>background\bgL3Lab2</background>
     <background>background\L2Lounge</background>
+    <background>background\bgL3Lab1</background>
     <background>background\L2Hall2</background>
     <background>background\bgHall1</background>
     <background>background\L2Hall1</background>
@@ -70,8 +72,10 @@
   <rooms name="rooms">
     <room>rooms\elevator</room>
     <room>rooms\hallway1</room>
+    <room>rooms\L3Lab2</room>
     <room>rooms\livingRoom</room>
     <room>rooms\roomL2Hall1</room>
+    <room>rooms\L3Lab1</room>
     <room>rooms\roomLounge</room>
     <room>rooms\roomL2Hall2</room>
     <room>rooms\hallway2</room>

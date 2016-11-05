@@ -30,9 +30,22 @@
 if (activated == true) {
     activated = false;
     if !instance_exists(objDialogue) {
-        text[0] = "This is a computer.";
-        create_dialogue(text);
+        text[0] = "This is a computer.#There's an email here...";
+        text[1] = "To: all_personnel#From: Richard Mathews#Subject: NOTICE OF SECURITY INCREASE- To be implemented as of 3.26"
+        text[2] = "'As of March 26, we will be implementing measures to increase the security of this facility.'"
+        text[3] = "'These measures will include:#1) Access to the second and third floors will be limited to resident personnel. #2) A retina scan will be required to access the main labs.'#3) All reports must be encrypted and forwarded through the central database before delivery #   to [insert govt agency].'"
+        text[4] = "If you have any questions about these new measures, feel free to contact me.##
+        - Richard S. Mathews, Director of Security"
     }
+    with (objB1Flags) {
+        narrative_pause = true;
+        if (office_computer_checked == false) {
+            office_computer_checked = true;
+            other.text[5] = "..."
+            other.text[6] = "You found a key next to the computer."
+        }
+    } 
+    create_dialogue(text);
 }
 </string>
           </argument>

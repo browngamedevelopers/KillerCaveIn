@@ -29,6 +29,7 @@
 
 first_time = true;
 first_time_in_office = true;
+office_computer_checked = false;
 narrative_pause = false;
 power_on = false;
 

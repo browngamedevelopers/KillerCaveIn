@@ -28,20 +28,29 @@
             <string>/// Check for activation
 
 if (activated == true) {
-    if !instance_exists(objDialogue) {
-        with (objB1Flags) {
-            if power_on == false {
-                text[0] = "Lights are turned on.";
-                create_dialogue(text);
-                power_on = true;
-            } else {
-                text[0] = "Lights are turned off.";
-                create_dialogue(text);
-                power_on = false;
-            }      
+    if (check_inventory("Power Key")) { 
+        if !instance_exists(objDialogue) {
+            with (objB1Flags) {
+                if power_on == false {
+                    text[0] = "Lights are turned on.";
+                    create_dialogue(text);
+                    power_on = true;
+                } else {
+                    text[0] = "Lights are turned off.";
+                    create_dialogue(text);
+                    power_on = false;
+                }      
+            }
+        }
+    } else {
+        if !instance_exists(objDialogue) {
+            text[0] = "A fuse box?"
+            text[1] = "...#Damn. It's locked."
+            text[2] = "Maybe the key's around here somewhere?"
+            create_dialogue(text);
         }
     }
-    activated = false
+    activated = false;
 }
 </string>
           </argument>

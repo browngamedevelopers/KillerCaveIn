@@ -28,12 +28,10 @@
             <string>if (activated == true) {
     activated = false;
     if !instance_exists(objDialogue) {
-        text[0] = "This is a computer.#There's an email here...";
-        text[1] = "To: all_personnel#From: Richard Mathews#Subject: NOTICE OF SECURITY INCREASE- To be implemented as of 3.26"
-        text[2] = "'As of March 26, we will be implementing measures to increase the security of this facility.'"
-        text[3] = "'These measures will include:#1) Access to the second and third floors will be limited to resident personnel. #2) A retina scan will be required to access the main labs.'#3) All reports must be encrypted and forwarded through the central database before delivery #   to [insert govt agency].'"
-        text[4] = "If you have any questions about these new measures, feel free to contact me.##
-        - Richard S. Mathews, Director of Security"
+        text[0] = "To: Richard Mathews#From: Paul Garrett#Subject: Security";
+        text[1] = "'Richard,'"
+        text[2] = "'I am writing to request that you do something to increase the security down here. As you know, the work we’re doing here is highly sensitive and as it stands, anyone with a keycard could get into the labs. I trust you will address this issue as soon as possible.'"
+        text[3] = "'Yours, Paul'"
     }
     with (objB1Flags) {
         narrative_pause = true;

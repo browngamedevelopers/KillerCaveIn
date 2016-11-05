@@ -221,6 +221,7 @@
     <instance objName="obFloorB1" x="576" y="672" name="inst_95661EB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="640" y="672" name="inst_EA88B0BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="704" y="672" name="inst_D3F98740" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="note2" x="480" y="384" name="inst_A3ED33DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -21,6 +21,7 @@
       <sprite>sprites\sprPower</sprite>
     </sprites>
     <sprite>sprites\newSpriteBox</sprite>
+    <sprite>sprites\sprite13</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgOffice</background>
@@ -70,6 +71,7 @@
       <object>objects\objElevator</object>
       <object>objects\objB1Flags</object>
       <object>objects\objComputer</object>
+      <object>objects\note2</object>
     </objects>
   </objects>
   <rooms name="rooms">

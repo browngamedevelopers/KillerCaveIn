@@ -150,6 +150,7 @@ kInt = (keyboard_check_pressed(ord('E')) &amp;&amp; player_state);
 if (kInt &amp;&amp; player_state) {
     inst_object = instance_place(x, y, objObject);
     inst_door = instance_place(x,y,objDoor);
+    
     if inst_object != noone {
         with (inst_object) activated = true;
     } else if inst_door != noone {

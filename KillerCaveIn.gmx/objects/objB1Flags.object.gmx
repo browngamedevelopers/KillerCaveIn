@@ -53,7 +53,9 @@ power_on = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if first_time {
+            <string>/// Steps
+
+if first_time {
     first_time = false;
     narrative_pause = true;
     text[0] = "Of course there's no power. I can't see shit.";
@@ -70,6 +72,16 @@ if (narrative_pause == true) {
 if (!instance_exists(objDialogue) &amp;&amp; narrative_pause == true) {
     narrative_pause = false;
     global.game_state = 0;
+}
+
+if (power_on == true) {
+    with (objDarkLighting) {
+        lighting = 1.5;
+    } 
+} else {
+    with (objDarkLighting) {
+        lighting = 0.9;
+    }
 }
 </string>
           </argument>

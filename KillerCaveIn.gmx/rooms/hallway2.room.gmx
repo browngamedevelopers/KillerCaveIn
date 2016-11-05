@@ -175,9 +175,8 @@
     <instance objName="obFloorB1" x="1088" y="640" name="inst_4B180A20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="1152" y="640" name="inst_E17FC3E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="1216" y="640" name="inst_C968E782" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKey" x="896" y="192" name="inst_2683393E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="1120" y="256" name="inst_8E3B6099" locked="0" code="target_x = 576;&#xA;target_y = 100;&#xA;target_room = office;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDialogue" x="576" y="320" name="inst_709C003B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPower" x="896" y="192" name="inst_2683393E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoor" x="1120" y="256" name="inst_8E3B6099" locked="0" code="target_x = 224;&#xA;target_y = 576;&#xA;target_room = office;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -29,15 +29,15 @@
 
 if (activated == true) {
     if !instance_exists(objDialogue) {
-        with (objDarkLighting) {
-            if lighting == 0.9 {
+        with (objB1Flags) {
+            if power_on == false {
                 text[0] = "Lights are turned on.";
                 create_dialogue(text);
-                lighting = 1.5;
+                power_on = true;
             } else {
                 text[0] = "Lights are turned off.";
                 create_dialogue(text);
-                lighting = 0.9;
+                power_on = false;
             }      
         }
     }

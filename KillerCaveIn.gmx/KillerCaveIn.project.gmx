@@ -62,7 +62,7 @@
     <objects name="B1">
       <object>objects\objEntranceElevator</object>
       <object>objects\objLockedDoor</object>
-      <object>objects\objKey</object>
+      <object>objects\objPower</object>
       <object>objects\objDarkLighting</object>
       <object>objects\obFloorB1</object>
       <object>objects\objElevator</object>
@@ -71,6 +71,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\elevator</room>
+<<<<<<< HEAD
     <room>rooms\hallway1</room>
     <room>rooms\L3Lab2</room>
     <room>rooms\livingRoom</room>
@@ -82,9 +83,24 @@
     <room>rooms\roomBathroom</room>
     <room>rooms\office</room>
     <room>rooms\locked_room</room>
+=======
+>>>>>>> 8ddbdd256b0d48bf2b862137e9d4ae197bac5de1
     <room>rooms\temp_room</room>
     <room>rooms\error_room</room>
-    <room>rooms\death_closet</room>
+    <rooms name="B1">
+      <room>rooms\hallway1</room>
+      <room>rooms\hallway2</room>
+      <room>rooms\office</room>
+      <room>rooms\death_closet</room>
+      <room>rooms\locked_room</room>
+    </rooms>
+    <rooms name="B2">
+      <room>rooms\roomL2Hall1</room>
+      <room>rooms\roomL2Hall2</room>
+      <room>rooms\livingRoom</room>
+      <room>rooms\roomBathroom</room>
+      <room>rooms\roomLounge</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -20,6 +20,7 @@
       <sprite>sprites\sprComputer</sprite>
       <sprite>sprites\sprPower</sprite>
     </sprites>
+    <sprite>sprites\newSpriteBox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgOffice</background>

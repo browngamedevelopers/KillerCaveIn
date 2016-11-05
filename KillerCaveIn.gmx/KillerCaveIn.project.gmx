@@ -17,6 +17,7 @@
       <sprite>sprites\sprFloorB1</sprite>
       <sprite>sprites\sprStartElevator</sprite>
       <sprite>sprites\sprLockedDoor</sprite>
+      <sprite>sprites\sprComputer</sprite>
       <sprite>sprites\sprPower</sprite>
     </sprites>
   </sprites>
@@ -65,6 +66,7 @@
       <object>objects\obFloorB1</object>
       <object>objects\objElevator</object>
       <object>objects\objB1Flags</object>
+      <object>objects\objComputer</object>
     </objects>
   </objects>
   <rooms name="rooms">

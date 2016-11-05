@@ -28,6 +28,7 @@
             <string>/// Initialization of flags for B1
 
 first_time = true;
+first_time_in_office = true;
 narrative_pause = false;
 power_on = false;
 
@@ -62,7 +63,7 @@ if first_time {
     text[1] = "Hello?";
     text[2] = "...";
     text[3] = "Where is everyone?";
-    first_time_dialogue = instance_find(create_dialogue(text), 1);
+    create_dialogue(text);
 }
 
 if (narrative_pause == true) {
@@ -82,6 +83,13 @@ if (power_on == true) {
     with (objDarkLighting) {
         lighting = 0.9;
     }
+}
+
+if (room == office &amp;&amp; first_time_in_office) {
+    first_time_in_office = false;
+    narrative_pause = true;
+    text[0] = "Probably shouldn't be here...";
+    create_dialogue(text);
 }
 </string>
           </argument>

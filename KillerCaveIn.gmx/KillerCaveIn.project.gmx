@@ -73,8 +73,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\elevator</room>
-    <room>rooms\L3Lab2</room>
-    <room>rooms\L3Lab1</room>
     <room>rooms\temp_room</room>
     <room>rooms\error_room</room>
     <rooms name="B1">
@@ -90,6 +88,10 @@
       <room>rooms\livingRoom</room>
       <room>rooms\roomBathroom</room>
       <room>rooms\roomLounge</room>
+    </rooms>
+    <rooms name="B3">
+      <room>rooms\L3Lab1</room>
+      <room>rooms\L3Lab2</room>
     </rooms>
   </rooms>
   <help>

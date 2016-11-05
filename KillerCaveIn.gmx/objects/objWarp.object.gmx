@@ -27,23 +27,7 @@
             <kind>1</kind>
             <string>/// Warp player to room
 
-// INSTRUCTIONS ON HOW TO USE THIS WARP!!!
-// For each warp in the room, you must change the instance creation code, and add this:
-//
-// target_x = ###;
-// target_y = ###;
-// target_room = room_name;
-//
-// Where ### are x and y coordinates of where the player should be in the next room,
-// and room_name is the room name.
-
-objPlayer.x = target_x;
-objPlayer.y = target_y;
-objPlayer.depth = -900000;
-with (objDialogue) {
-    instance_destroy();
-}
-room_goto(target_room);
+warp_player(target_x, target_y, target_room)
 </string>
           </argument>
         </arguments>

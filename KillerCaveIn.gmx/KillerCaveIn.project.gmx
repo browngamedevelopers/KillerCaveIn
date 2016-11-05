@@ -60,7 +60,7 @@
     <objects name="B1">
       <object>objects\objEntranceElevator</object>
       <object>objects\objLockedDoor</object>
-      <object>objects\objKey</object>
+      <object>objects\objPower</object>
       <object>objects\objDarkLighting</object>
       <object>objects\obFloorB1</object>
       <object>objects\objElevator</object>

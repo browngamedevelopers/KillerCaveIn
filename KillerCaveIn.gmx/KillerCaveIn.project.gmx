@@ -69,18 +69,22 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\elevator</room>
-    <room>rooms\hallway1</room>
-    <room>rooms\livingRoom</room>
-    <room>rooms\roomL2Hall1</room>
-    <room>rooms\roomLounge</room>
-    <room>rooms\roomL2Hall2</room>
-    <room>rooms\hallway2</room>
-    <room>rooms\roomBathroom</room>
-    <room>rooms\office</room>
-    <room>rooms\locked_room</room>
     <room>rooms\temp_room</room>
     <room>rooms\error_room</room>
-    <room>rooms\death_closet</room>
+    <rooms name="B1">
+      <room>rooms\hallway1</room>
+      <room>rooms\hallway2</room>
+      <room>rooms\office</room>
+      <room>rooms\death_closet</room>
+      <room>rooms\locked_room</room>
+    </rooms>
+    <rooms name="B2">
+      <room>rooms\roomL2Hall1</room>
+      <room>rooms\roomL2Hall2</room>
+      <room>rooms\livingRoom</room>
+      <room>rooms\roomBathroom</room>
+      <room>rooms\roomLounge</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

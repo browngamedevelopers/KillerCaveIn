@@ -23,6 +23,7 @@
   <backgrounds name="background">
     <background>background\bgHall1</background>
     <background>background\bgHall2</background>
+    <background>background\closet</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -67,6 +68,7 @@
     <room>rooms\locked_room</room>
     <room>rooms\temp_room</room>
     <room>rooms\error_room</room>
+    <room>rooms\death_closet</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

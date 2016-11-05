@@ -42,10 +42,11 @@ if (activated == true) {
         if (office_computer_checked == false) {
             office_computer_checked = true;
             other.text[5] = "..."
-            other.text[6] = "You found a key next to the computer."
+            other.text[6] = "You found a power key next to the computer."
         }
     } 
     create_dialogue(text);
+    add_to_inventory("Power Key", "Used to turn on the generator.", "");
 }
 </string>
           </argument>

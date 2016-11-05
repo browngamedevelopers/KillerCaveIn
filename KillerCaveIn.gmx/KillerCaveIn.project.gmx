@@ -40,6 +40,7 @@
   <scripts name="scripts">
     <script>scripts\create_dialogue.gml</script>
     <script>scripts\warp_player.gml</script>
+    <script>scripts\add_to_inventory.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>

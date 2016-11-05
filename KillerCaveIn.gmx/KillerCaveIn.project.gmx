@@ -73,7 +73,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\elevator</room>
-<<<<<<< HEAD
     <room>rooms\hallway1</room>
     <room>rooms\L3Lab2</room>
     <room>rooms\livingRoom</room>
@@ -85,8 +84,6 @@
     <room>rooms\roomBathroom</room>
     <room>rooms\office</room>
     <room>rooms\locked_room</room>
-=======
->>>>>>> 8ddbdd256b0d48bf2b862137e9d4ae197bac5de1
     <room>rooms\temp_room</room>
     <room>rooms\error_room</room>
     <rooms name="B1">

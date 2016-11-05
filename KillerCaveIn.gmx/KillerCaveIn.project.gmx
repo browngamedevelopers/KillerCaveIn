@@ -21,7 +21,14 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
+    <background>background\bgOffice</background>
+    <background>background\bathroom</background>
+    <background>background\L2LivingRoom</background>
+    <background>background\background8</background>
+    <background>background\L2Lounge</background>
+    <background>background\L2Hall2</background>
     <background>background\bgHall1</background>
+    <background>background\L2Hall1</background>
     <background>background\bgHall2</background>
   </backgrounds>
   <paths name="paths"/>
@@ -61,7 +68,12 @@
   <rooms name="rooms">
     <room>rooms\elevator</room>
     <room>rooms\hallway1</room>
+    <room>rooms\livingRoom</room>
+    <room>rooms\roomL2Hall1</room>
+    <room>rooms\roomLounge</room>
+    <room>rooms\roomL2Hall2</room>
     <room>rooms\hallway2</room>
+    <room>rooms\roomBathroom</room>
     <room>rooms\office</room>
     <room>rooms\locked_room</room>
     <room>rooms\temp_room</room>

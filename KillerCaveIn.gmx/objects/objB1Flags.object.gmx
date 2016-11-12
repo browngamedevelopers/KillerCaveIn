@@ -30,9 +30,11 @@
 first_time = true;
 first_time_in_office = true;
 office_computer_checked = false;
+first_time_in_death_closet = true;
+corpse_checked = false;
 narrative_pause = false;
 power_on = false;
-
+took_elev_to_b2 = false;
 </string>
           </argument>
         </arguments>
@@ -63,7 +65,7 @@ if first_time {
     text[0] = "Of course there's no power. I can't see shit.";
     text[1] = "Hello?";
     text[2] = "...";
-    text[3] = "Where is everyone?";
+    text[3] = "Where is everyone?###(Press A/D to move Left/Right...)";
     create_dialogue(text);
 }
 
@@ -91,6 +93,27 @@ if (room == office &amp;&amp; first_time_in_office) {
     narrative_pause = true;
     text[0] = "Probably shouldn't be here...";
     create_dialogue(text);
+}
+
+if (room == death_closet &amp;&amp; first_time_in_death_closet) {
+    first_time_in_death_closet = false;
+    narrative_pause = true;
+    text[0] = "What the fuck?";
+    text[1] = "Wait... there's something next to the body.";
+    create_dialogue(text);
+}
+
+if (room == elevator_to_b2 &amp;&amp; !took_elev_to_b2) {
+    took_elev_to_b2 = true;
+    text[0] = "You find a scrap of paper on the floor...";
+    text[1] = "To: Luna Collier#From: Aureliano Iguaran#Subject: Re: Congratulations!";
+    text[2] = "Thanks! Next time I’m in town I’ll get in touch with you.##
+    - Aureliano"
+    text[3] = "| On Feb, 7, 2019, At 4:32 PM, Luna wrote:#| I was just thinking about college and I remembered you just got a job. Congratulations!"
+    text[4] = "| If you need anything just let me know. Also, if you're ever in town we should get lunch.#|#|    - Luna"
+    text[5] = "(THIS IS THE END OF THE DEMO.)"
+    create_dialogue(text);
+    
 }
 </string>
           </argument>

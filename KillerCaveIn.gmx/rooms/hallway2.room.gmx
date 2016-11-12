@@ -142,7 +142,7 @@
     <instance objName="obFloorB1" x="1280" y="704" name="inst_AE95C305" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="1344" y="704" name="inst_735F17ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="1408" y="704" name="inst_DDB1A7DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLockedDoor" x="160" y="256" name="inst_9770A1CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objB1LockedDoor" x="160" y="256" name="inst_9770A1CD" locked="0" code="target_x = 448;&#xA;target_y = 608;&#xA;target_room = death_closet;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="320" y="576" name="inst_4C97C69C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="384" y="576" name="inst_825BDA2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="448" y="576" name="inst_210D71C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -88,12 +88,13 @@ instance_destroy(); //destroy the object
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_state = (global.game_state == 0) or (global.game_state == 2);
-key_pressed = (keyboard_check_pressed(ord("E")));
+            <string>var player_state = (global.game_state == 0) or (global.game_state == 2);
+var key_pressed = (keyboard_check_pressed(ord("E")));
+var key_held = (keyboard_check(ord("E")));
 
 if (characters &lt; message_length) { //if current character count is less than the amount in current message* 
-    hold = (key_pressed &amp;&amp; player_state); //hold is true or false if we hold E or not
-    characters += increase * (1 + hold); //increase speed based on hold
+    hold = (key_held &amp;&amp; player_state); //hold is true or false if we hold E or not
+    characters += increase * (1 + (0.5 * hold)); //increase speed based on hold
     message_draw = string_copy(message[message_current], 0, characters); //copy string to current character
 } 
 else { //if current character is more than the amount in the current message

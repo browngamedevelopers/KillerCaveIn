@@ -30,13 +30,13 @@
 if (activated == true) {
     activated = false;
     with (objB1Flags) {
-        if (!power_on) {
+        if (!power_on &amp;&amp; !check_inventory("Elevator Key")) {
             if !instance_exists(objDialogue) {
-                text[0] = "Huh. Needs power.";
+                text[0] = "Huh. Needs an elevator key.";
                 create_dialogue(text);
             }
         } else {
-            room_goto(temp_room);
+            warp_player(other.target_x, other.target_y, other.target_room);
         }
     } 
 }

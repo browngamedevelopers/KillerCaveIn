@@ -12,4 +12,3 @@ var inv_length = array_height_2d(global.inventory);
 global.inventory[inv_length, 0] = argument[0];
 global.inventory[inv_length, 1] = argument[1];
 global.inventory[inv_length, 2] = argument[2];
-

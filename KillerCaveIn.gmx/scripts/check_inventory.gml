@@ -16,4 +16,3 @@ for (var i = 0; i <  array_height_2d(global.inventory); i++) {
 
 return false;
 
-

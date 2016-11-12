@@ -20,22 +20,29 @@
       <sprite>sprites\sprComputer</sprite>
       <sprite>sprites\sprPower</sprite>
     </sprites>
-    <sprite>sprites\newSpriteBox</sprite>
+    <sprite>sprites\sprBoxNew</sprite>
     <sprite>sprites\sprite13</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bgOffice</background>
-    <background>background\bathroom</background>
-    <background>background\L2LivingRoom</background>
     <background>background\background8</background>
-    <background>background\bgL3Lab2</background>
-    <background>background\L2Lounge</background>
-    <background>background\bgL3Lab1</background>
-    <background>background\L2Hall2</background>
-    <background>background\bgHall1</background>
-    <background>background\L2Hall1</background>
-    <background>background\bgHall2</background>
-    <background>background\closet</background>
+    <backgrounds name="B1">
+      <background>background\bgOffice</background>
+      <background>background\bgCloset</background>
+      <background>background\bgHall2</background>
+      <background>background\bgHall1</background>
+    </backgrounds>
+    <backgrounds name="B2">
+      <background>background\bgL2Hall1</background>
+      <background>background\bgL2Hall2</background>
+      <background>background\bgL2Lounge</background>
+      <background>background\bgL2LivingRoom</background>
+      <background>background\bgBathroom</background>
+    </backgrounds>
+    <backgrounds name="B3">
+      <background>background\bgL3Lab1</background>
+      <background>background\bgL3Lab2</background>
+    </backgrounds>
+    <background>background\bgStartElevator</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -66,14 +73,15 @@
     </objects>
     <objects name="B1">
       <object>objects\objEntranceElevator</object>
-      <object>objects\objLockedDoor</object>
+      <object>objects\objB1LockedDoor</object>
       <object>objects\objPower</object>
       <object>objects\objDarkLighting</object>
       <object>objects\obFloorB1</object>
       <object>objects\objElevator</object>
       <object>objects\objB1Flags</object>
       <object>objects\objComputer</object>
-      <object>objects\note2</object>
+      <object>objects\objNote</object>
+      <object>objects\objDummyDoor</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -86,6 +94,7 @@
       <room>rooms\office</room>
       <room>rooms\death_closet</room>
       <room>rooms\locked_room</room>
+      <room>rooms\elevator_to_b2</room>
     </rooms>
     <rooms name="B2">
       <room>rooms\roomL2Hall1</room>

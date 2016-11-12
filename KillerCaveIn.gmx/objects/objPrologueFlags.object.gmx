@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// Initialization (message create)
 
-message[0] = "Robin, come in. Can you hear me? (Press E to continue...)";
+message[0] = "Robin, come in. Can you hear me?###(Press E to continue...)";
 message[1] = "'Yeah, I got you.'";
 message[2] = "We lost contact with the research team about 18 hours ago."; 
 message[3] = "Someone must’ve flipped the emergency shutdown switch, so everything’s in lockdown.";

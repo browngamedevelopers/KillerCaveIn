@@ -176,7 +176,7 @@
     <instance objName="obFloorB1" x="1344" y="704" name="inst_C5ED78C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFloorB1" x="1408" y="704" name="inst_32CC8023" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEntranceElevator" x="192" y="256" name="inst_76A9D39F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objElevator" x="1184" y="256" name="inst_9C66DDCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objElevator" x="1184" y="256" name="inst_9C66DDCA" locked="0" code="target_x = 448;&#xA;target_y = 576;&#xA;target_room = elevator_to_b2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objB1Flags" x="64" y="-32" name="inst_08B62427" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

@@ -27,7 +27,9 @@
             <kind>1</kind>
             <string>/// Warp player to room
 
-warp_player(target_x, target_y, target_room)
+if (!instance_exists(objFadeBlack)) {
+    warp_player(target_x, target_y, target_room)
+}
 </string>
           </argument>
         </arguments>

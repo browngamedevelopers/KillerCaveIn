@@ -66,6 +66,7 @@
       <object>objects\objWarp</object>
       <object>objects\objInventory</object>
       <object>objects\objController</object>
+      <object>objects\objFadeBlack</object>
     </objects>
     <objects name="Prologue">
       <object>objects\objDialogueElevator</object>

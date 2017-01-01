@@ -2,9 +2,9 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
-  <depth>0</depth>
-  <persistent>0</persistent>
+  <visible>-1</visible>
+  <depth>-50000</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,26 +25,84 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Initialization (message create)
+            <string>/// Initialization
 
-message[0] = "Robin, come in. Can you hear me?###(Press E to continue...)";
-message[1] = "'Yeah, I got you.'";
-message[2] = "We lost contact with the research team about 18 hours ago."; 
-message[3] = "Someone must’ve flipped the emergency shutdown switch, so everything’s in lockdown.";
-message[4] = "We just need you to go down there, unlock the doors, and bring everyone back up.";
-message[5] = "'Yeah, yeah, I know.'";
-message[6] = "'Simple search and rescue…'";
-message[7] = "'What the hell were these guys working on all the way down here?'";
-message[8] = "That’s classified. Don’t poke around. Just get in and get out.";
-message[9] = "The researchers know the emergency protocol.";
-message[10] = "They should be waiting somewhere on the upper level.";
-message[11] = "Just remember to---";
-message[12] = "'Hello?'";
-message[13] = "...";
-message[14] = "Ugh. Piece of shit radio... must not reach this far underground.";
-message[15] = "Guess I’m on my own.";
+fadeSpeed = 1;
+fadeAlpha = 0;
+newRoom = 0;
 
-create_dialogue(message);
+player_x = 0;
+player_y = 0;
+
+alarm[0] = fadeSpeed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Iteratively fade to black, then go to alarm1
+
+alarm[1] = fadeSpeed;
+fadeAlpha -= 0.05;
+
+if (fadeAlpha &lt;= 0) {
+    show_debug_message("Destroyed");
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Iteratively fade to black, then go to alarm1
+
+if (fadeAlpha &gt;= 1.0) {
+    objPlayer.x = player_x;
+    objPlayer.y = player_y;
+    objPlayer.depth = -900000;
+    with (objDialogue) {
+        instance_destroy();
+    }
+    room_goto(newRoom);
+    alarm[1] = fadeSpeed + 1;
+} else {
+    alarm[0] = fadeSpeed;
+    fadeAlpha += 0.05;
+}
 </string>
           </argument>
         </arguments>
@@ -67,23 +125,13 @@ create_dialogue(message);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Check keys
-
-kSkip = keyboard_check(ord('Q'));
-
-if (kSkip) {
-    instance_destroy(); //destroy the object
-    warp_player(160, 576, hallway1);
-//    with (objPlayer) {
-//        x = 160;
-//        y = 576;
-//        }
-//    room_goto(hallway1);
-}
+            <string>show_debug_message(fadeAlpha);
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -100,16 +148,9 @@ if (kSkip) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Move to next room when stuff is done
-
-if (!instance_exists(objDialogue)) {
-    instance_destroy(); //destroy the object
-    with (objPlayer) {
-        x = 160;
-        y = 576;
-    }
-    room_goto(hallway1);
-}
+            <string>draw_set_alpha(fadeAlpha);
+draw_rectangle_color(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
+draw_set_alpha(1.0);
 </string>
           </argument>
         </arguments>

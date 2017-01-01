@@ -11,10 +11,10 @@
 // Output:
 // - Warps the player to room in (x, y) coordinate.
 
-objPlayer.x = argument[0];
-objPlayer.y = argument[1];
-objPlayer.depth = -900000;
-with (objDialogue) {
-    instance_destroy();
-}
-room_goto(argument[2]);
+var eff;
+
+eff = instance_create(0, 0, objFadeBlack);
+show_debug_message("Created");
+eff.player_x = argument[0];
+eff.player_y = argument[1];
+eff.newRoom = argument[2];

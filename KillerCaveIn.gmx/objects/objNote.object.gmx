@@ -36,8 +36,8 @@
           Yours, Paul"
     }
     with (objB1Flags) {
-        narrative_pause = true;
         if (corpse_checked == false) {
+            narrative_pause = true;
             corpse_checked = true;
             other.text[5] = "..."
             other.text[6] = "You found the elevator key next to the corpse."

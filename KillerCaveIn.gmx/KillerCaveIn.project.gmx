@@ -90,6 +90,8 @@
     </objects>
     <objects name="B2">
       <object>objects\objFloorB2</object>
+      <object>objects\objB2EntranceElev</object>
+      <object>objects\objElevToB3</object>
     </objects>
   </objects>
   <rooms name="rooms">

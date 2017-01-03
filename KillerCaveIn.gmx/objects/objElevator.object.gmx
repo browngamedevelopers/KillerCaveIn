@@ -30,7 +30,7 @@
 if (activated == true) {
     activated = false;
     with (objB1Flags) {
-        if (!power_on &amp;&amp; !check_inventory("Elevator Key")) {
+        if (!power_on || !check_inventory("Elevator Key")) {
             if !instance_exists(objDialogue) {
                 text[0] = "Huh. Needs an elevator key.";
                 create_dialogue(text);

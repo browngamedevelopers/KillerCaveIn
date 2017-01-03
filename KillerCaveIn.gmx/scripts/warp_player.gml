@@ -14,7 +14,6 @@
 var eff;
 
 eff = instance_create(0, 0, objFadeBlack);
-show_debug_message("Created");
 eff.player_x = argument[0];
 eff.player_y = argument[1];
 eff.newRoom = argument[2];

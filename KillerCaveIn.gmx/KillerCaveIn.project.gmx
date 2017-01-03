@@ -12,7 +12,6 @@
     <sprite>sprites\sprObject</sprite>
     <sprite>sprites\sprDoor</sprite>
     <sprite>sprites\sprWarp</sprite>
-    <sprite>sprites\sprElevator</sprite>
     <sprites name="B1">
       <sprite>sprites\sprFloorB1</sprite>
       <sprite>sprites\sprStartElevator</sprite>
@@ -20,6 +19,10 @@
       <sprite>sprites\sprComputer</sprite>
       <sprite>sprites\sprPower</sprite>
     </sprites>
+    <sprites name="B2">
+      <sprite>sprites\sprFloorB2</sprite>
+    </sprites>
+    <sprite>sprites\sprElevator</sprite>
     <sprite>sprites\sprBoxNew</sprite>
     <sprite>sprites\sprite13</sprite>
   </sprites>
@@ -41,6 +44,7 @@
     <backgrounds name="B3">
       <background>background\bgL3Lab1</background>
       <background>background\bgL3Lab2</background>
+      <background>background\bgL3Final</background>
     </backgrounds>
     <background>background\bgStartElevator</background>
   </backgrounds>
@@ -84,6 +88,9 @@
       <object>objects\objNote</object>
       <object>objects\objDummyDoor</object>
     </objects>
+    <objects name="B2">
+      <object>objects\objFloorB2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\elevator</room>
@@ -94,19 +101,19 @@
       <room>rooms\hallway2</room>
       <room>rooms\office</room>
       <room>rooms\death_closet</room>
-      <room>rooms\locked_room</room>
       <room>rooms\elevator_to_b2</room>
     </rooms>
     <rooms name="B2">
-      <room>rooms\roomL2Hall1</room>
-      <room>rooms\roomL2Hall2</room>
-      <room>rooms\livingRoom</room>
-      <room>rooms\roomBathroom</room>
-      <room>rooms\roomLounge</room>
+      <room>rooms\roomB2Hall1</room>
+      <room>rooms\roomB2Hall2</room>
+      <room>rooms\roomB2LivingRoom</room>
+      <room>rooms\roomB2Lounge</room>
+      <room>rooms\roomB2Bathroom</room>
     </rooms>
     <rooms name="B3">
-      <room>rooms\L3Lab1</room>
-      <room>rooms\L3Lab2</room>
+      <room>rooms\roomB3Lab1</room>
+      <room>rooms\roomB3Lab2</room>
+      <room>rooms\roomB3Final</room>
     </rooms>
   </rooms>
   <help>

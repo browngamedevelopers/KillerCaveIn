@@ -111,7 +111,8 @@ if (room == elevator_to_b2 &amp;&amp; !took_elev_to_b2) {
     - Aureliano"
     text[3] = "| On Feb, 7, 2019, At 4:32 PM, Luna wrote:#| I was just thinking about college and I remembered you just got a job. Congratulations!"
     text[4] = "| If you need anything just let me know. Also, if you're ever in town we should get lunch.#|#|    - Luna"
-    text[5] = "(THIS IS THE END OF THE DEMO.)"
+    text[5] = "..."
+    text[6] = "Now entering B2."
     create_dialogue(text);
     
 }

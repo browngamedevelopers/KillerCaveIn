@@ -116,6 +116,11 @@ if (room == elevator_to_b2 &amp;&amp; !took_elev_to_b2) {
     create_dialogue(text);
     
 }
+
+if (took_elev_to_b2 &amp;&amp; !instance_exists(objDialogue) &amp;&amp; !instance_exists(objFadeBlack)) {
+    warp_player(160, 576, roomB2Hall1);
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

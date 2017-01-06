@@ -92,6 +92,7 @@
       <object>objects\objFloorB2</object>
       <object>objects\objB2EntranceElev</object>
       <object>objects\objElevToB3</object>
+      <object>objects\objB2Flags</object>
     </objects>
   </objects>
   <rooms name="rooms">

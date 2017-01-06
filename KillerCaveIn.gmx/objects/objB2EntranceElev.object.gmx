@@ -29,10 +29,16 @@
 
 if (activated == true) {
     activated = false;
-    if !instance_exists(objDialogue) {
-        text[0] = "I shouldn't go back up so soon.";
-        create_dialogue(text);
-    }
+    with (objB2Flags) {
+        if (!check_inventory("Elevator Card")) {
+            if !instance_exists(objDialogue) {
+                text[0] = "I'm going to need an elevator card to get to B3.";
+                create_dialogue(text);
+            }
+        } else {
+            warp_player(other.target_x, other.target_y, other.target_room);
+        }
+    } 
 }
 </string>
           </argument>

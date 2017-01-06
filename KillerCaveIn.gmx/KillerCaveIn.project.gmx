@@ -112,6 +112,7 @@
       <room>rooms\roomB2LivingRoom</room>
       <room>rooms\roomB2Lounge</room>
       <room>rooms\roomB2Bathroom</room>
+      <room>rooms\roomElevatorToB3</room>
     </rooms>
     <rooms name="B3">
       <room>rooms\roomB3Lab1</room>

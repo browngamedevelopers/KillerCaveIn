@@ -56,6 +56,7 @@
     <instance objName="objFloorB2" x="0" y="160" name="inst_CE44F35C" locked="0" code="" scaleX="1" scaleY="6.5" colour="4294967295" rotation="0"/>
     <instance objName="objFloorB2" x="1118" y="160" name="inst_2181B1F1" locked="0" code="" scaleX="1" scaleY="6.5" colour="4294967295" rotation="0"/>
     <instance objName="objWarp" x="64" y="160" name="inst_1B3680E0" locked="0" code="target_x = 1248;&#xA;target_y = 576;&#xA;target_room = roomB2Hall2;&#xA;" scaleX="0.0500000007450581" scaleY="13" colour="4294967295" rotation="0"/>
+    <instance objName="objB2ToiletNote" x="800" y="416" name="inst_B9888E7B" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

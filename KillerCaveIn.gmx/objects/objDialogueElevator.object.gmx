@@ -102,17 +102,6 @@ else { //if current character is more than the amount in the current message
         }
     }
 }
-
-kSkip = keyboard_check(ord('Q'));
-
-if (kSkip) {
-    instance_destroy(); //destroy the object
-    with (objPlayer) {
-        x = 160;
-        y = 576;
-        }
-    room_goto(hallway1);
-}
 </string>
           </argument>
         </arguments>

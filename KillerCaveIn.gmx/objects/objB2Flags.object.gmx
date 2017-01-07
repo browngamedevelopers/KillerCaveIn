@@ -28,6 +28,58 @@
             <string>/// Initialization of flags for B2
 
 first_time_in_b2 = true;
+drawer_checked = false;
+narrative_pause = false;
+lounge_sink_checked = false;
+toilet_checked = false;
+took_elev_to_b3 = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Check flags
+
+if (narrative_pause == true) {
+    global.game_state = 2;
+}
+
+if (!instance_exists(objDialogue) &amp;&amp; narrative_pause == true) {
+    narrative_pause = false;
+    global.game_state = 0;
+}
+
+if (room == roomElevatorToB3 &amp;&amp; !took_elev_to_b3) {
+    took_elev_to_b3 = true;
+    text[0] = "I haven't found a single survivor yet... but that's not what's bothering me.";
+    text[1] = "I've got a bad feeling about something...";
+    text[2] = "..."
+    text[3] = "Now entering B3."
+    create_dialogue(text);
+    
+}
+
+if (took_elev_to_b3 &amp;&amp; !instance_exists(objDialogue) &amp;&amp; !instance_exists(objFadeBlack)) {
+    warp_player(348, 576, roomB3Lab1);
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

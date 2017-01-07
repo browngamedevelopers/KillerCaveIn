@@ -74,7 +74,7 @@ kSkip = keyboard_check(ord('Q'));
 if (kSkip) {
     instance_destroy(); //destroy the object
     //warp_player(160, 576, hallway1);
-    warp_player(348, 576, roomB3Lab1);
+    warp_player(160, 576, roomB3Lab1);
 }
 </string>
           </argument>

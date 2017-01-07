@@ -125,7 +125,8 @@ if (fadeAlpha &gt;= 1.0) {
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(fadeAlpha);
-draw_rectangle_color(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
+//draw_rectangle_color(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
+draw_rectangle_color(0, 0, view_wport, view_hport, c_black, c_black, c_black, c_black, false);
 draw_set_alpha(1.0);
 </string>
           </argument>
